@@ -4,8 +4,14 @@ import Nav from './components/Nav'
 import './App.css';
 
 function App() {
+  // const body = {
+  //   backgroundImage: 'url(+background+)',
+  //   backgroundSize: 'cover',
+  //   maxHeight: '100%',
+  //   color: '#fff'
+  // }
   return (
-    <div className="App">
+    <div>
       <Nav />
       <Footer />
     </div>
