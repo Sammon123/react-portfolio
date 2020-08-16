@@ -1,6 +1,10 @@
 import React from 'react';
-import Footer from './components/Footer'
+import { BrowserRouter as Router, Route } from 'react-router-dom'
 import Nav from './components/Nav'
+import About from './pages/About'
+import Contact from './pages/Contact'
+import Projects from './pages/Projects'
+import Footer from './components/Footer'
 import './App.css';
 
 function App() {
@@ -12,8 +16,14 @@ function App() {
   // }
   return (
     <div>
-      <Nav />
+      <Router>
+        <Nav />
+        <Route exact path="/" component={About} />
+        <Route path="/contact" component={Contact} />
+        <Route path="/projects" component={Projects} />
+      </Router>
       <Footer />
+
     </div>
   );
 }
