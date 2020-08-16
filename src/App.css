@@ -7,12 +7,6 @@ a {
 	text-decoration: none;
 }
 
-div {
-	background: url('./images/bg.jpg') no-repeat center center/cover;
-	max-height: 100%;
-	color: #fff;
-}
-
 footer {
 	text-align: center;
 	padding: 1rem;
@@ -56,6 +50,12 @@ span {
 
 ul {
 	list-style: none;
+}
+
+.body {
+	background: url('./images/bg.jpg') no-repeat center center/cover;
+	max-height: 100%;
+	color: #fff;
 }
 
 .btn-dark {
