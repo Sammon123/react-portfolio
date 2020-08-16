@@ -1,9 +1,17 @@
 import React from 'react'
 
 const Nav = () => {
+
+    const headerStyle = {
+        color: '#fff',
+        background: 'transparent',
+        position: 'fixed',
+        zIndex: '2',
+        width: '100%'
+    }
     return (
-        <div>
-            <header className="navbar navbar-expand-lg">
+        <div style={headerStyle}>
+            <header className="navbar navbar-expand-lg navbar-light">
                 <div className="container">
                     <a className="navbar-brand" href="/">Peter Sammon</a>
                     <button
@@ -32,6 +40,10 @@ const Nav = () => {
                     </div>
                 </div>
             </header>
+
+
+
+
         </div>
     )
 }
