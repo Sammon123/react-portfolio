@@ -22,6 +22,8 @@ const About = () => {
                         If you are a potential business seeking some sort of web presence
                         and/or employer looking to hire, feel free to get in touch with me.
 				    </p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam cum vel temporibus laboriosam aperiam ea aspernatur quos quod veritatis incidunt harum eaque debitis, qui impedit voluptate totam quasi recusandae officiis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis aliquid esse rem, asperiores eum, corrupti cupiditate ipsam ullam odit dignissimos pariatur assumenda perspiciatis nemo deserunt quasi quod doloremque perferendis excepturi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur a molestias ipsa eum odit officiis deserunt quis voluptatum, nam est libero ducimus similique eligendi beatae deleniti rem odio iure necessitatibus.
+                    </p>
                 </div>
             </main>
         </div>
