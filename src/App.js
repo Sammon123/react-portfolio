@@ -1,29 +1,24 @@
 import React from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom'
-import Nav from './components/Nav'
-import About from './pages/About'
-import Contact from './pages/Contact'
-import Projects from './pages/Projects'
-import Footer from './components/Footer'
+import logo from './logo.svg';
 import './App.css';
 
 function App() {
-  // const body = {
-  //   backgroundImage: 'url(+background+)',
-  //   backgroundSize: 'cover',
-  //   maxHeight: '100%',
-  //   color: '#fff'
-  // }
   return (
-    <div>
-      <Router>
-        <Nav />
-        <Route exact path="/" component={About} />
-        <Route path="/contact" component={Contact} />
-        <Route path="/projects" component={Projects} />
-      </Router>
-      <Footer />
-
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
     </div>
   );
 }

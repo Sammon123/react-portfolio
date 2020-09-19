@@ -1,262 +1,38 @@
-* {
-	box-sizing: border-box;
+.App {
+  text-align: center;
 }
 
-.navbar-brand {
-	color: #fff;
-	text-decoration: none;
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
 }
 
-footer {
-	text-align: center;
-	padding: 1rem;
-	background: url('./images/bg.jpg') round;
-	color: #fff;
-	height: 60px;
-	width: 100%;
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
 }
 
-h1,
-h2 {
-	margin: 0;
-	font-weight: 400;
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
 }
 
-header {
-	color: #fff;
-	background: transparent;
-	position: fixed;
-	z-index: 2;
-	width: 100%;
+.App-link {
+  color: #61dafb;
 }
 
-li {
-	margin-right: 1.75rem;
-}
-
-main {
-	padding: 4rem;
-	min-height: calc(100vh-60px);
-}
-
-p {
-	margin: 1rem 0;
-	width: 75%;
-}
-
-span {
-	text-decoration: none;
-}
-
-ul {
-	list-style: none;
-}
-
-.body {
-	background: url('./images/bg.jpg') no-repeat center center/cover;
-	max-height: 100%;
-	color: #fff;
-}
-
-.btn-dark {
-	display: block;
-	padding: 0.5rem 1rem;
-	margin-bottom: 0.3rem;
-	background: rgb(0, 26, 0);
-	color: white;
-	border-radius: 10px;
-	border: 2px rgb(5, 44, 5) solid;
-}
-
-.fa-facebook {
-	color: #385898;
-	background-color: #fff;
-}
-
-.fa-linkedin {
-	color: #0073b1;
-	background-color: #fff;
-	padding: 0;
-}
-
-h1.lg-heading {
-	font-size: 6rem;
-}
-
-h2.sm-heading {
-	margin-bottom: 2rem;
-	padding: 0.2rem 1rem;
-}
-
-.navbar-light .navbar-brand {
-	color: white;
-}
-
-.navbar-light .navbar-nav .active > .nav-link,
-.navbar-light .navbar-nav .nav-link.active,
-.navbar-light .navbar-nav .nav-link.show,
-.navbar-light .navbar-nav .show > .nav-link {
-	color: #fff;
-}
-
-.navbar-light .navbar-nav .nav-link {
-	color: #fff;
-}
-
-.navbar-light .navbar-toggler {
-	background-color: white;
-}
-
-.portrait {
-	height: 35vh;
-	border-radius: 50%;
-	border: 3px rgba(5, 44, 5) solid;
-	float: right;
-}
-
-.projects {
-	display: grid;
-	grid-gap: 0.7rem;
-	grid-template-columns: repeat(3, 1fr);
-}
-
-.projects iframe {
-	width: 100%;
-	border: 3px #fff solid;
-	border-radius: 5px;
-}
-
-.projects img {
-	width: 100%;
-	border: 3px #fff solid;
-	border-radius: 5px;
-}
-
-.socials li {
-	display: inline-block;
-	margin-right: 2rem;
-	text-align: center;
-	height: 35vh;
-}
-
-#contact {
-	text-align: center;
-}
-
-.btn-dark:hover {
-	color: rgb(0, 26, 0);
-	background: white;
-	transition: 0.5s;
-	text-decoration: none;
-}
-
-.navbar-light:hover .navbar-brand:hover {
-	color: #111;
-	transition: 0.5s;
-}
-
-.navbar-light:hover .navbar-nav:hover .nav-link:hover {
-	color: rgba(0, 26, 0);
-	transition: 0.25s;
-}
-
-.navbar-light:hover .navbar-toggler:hover {
-	background-color: transparent;
-	transition: 0.5s;
-}
-
-.projects iframe:hover {
-	opacity: 0.5;
-	border-color: grey;
-	transition: all 0.5s ease-out;
-}
-
-.projects img:hover {
-	opacity: 0.5;
-	border-color: grey;
-	transition: all 0.5s ease-out;
-}
-
-.btn-dark:active {
-	background: rgb(0, 26, 0);
-	color: white;
-	transition: 0.25s;
-	text-decoration: none;
-}
-
-.navbar-light:active .navbar-brand:active {
-	color: #fff;
-	transition: 0.25s;
-}
-
-.navbar-light:active .navbar-nav:active .nav-link:active {
-	color: white;
-	transition: 0.25s;
-}
-
-.navbar-light:active .navbar-toggler:active {
-	background-color: white;
-	transition: 0.5s;
-	border: none;
-}
-
-@media screen and (min-width: 1171px) {
-	.projects {
-		grid-template-columns: repeat(4, 1fr);
-	}
-}
-
-@media screen and (min-width: 769px) and (max-width: 1170px) {
-	.projects {
-		grid-template-columns: repeat(3, 1fr);
-	}
-
-	h1.lg-heading {
-		font-size: 5rem;
-	}
-}
-
-@media screen and (max-width: 768px) {
-	p {
-		width: 100%;
-		padding: 0 1.5rem;
-	}
-	main {
-		align-items: center;
-		text-align: center;
-	}
-
-	main .lg-heading {
-		line-height: 1;
-		margin-bottom: 1rem;
-		font-size: 3rem;
-	}
-
-	h2.sm-heading {
-		font-size: 2rem;
-	}
-
-	.projects {
-		grid-template-columns: repeat(2, 1fr);
-	}
-
-	.portrait {
-		float: none;
-		height: 25vh;
-	}
-}
-
-@media screen and (max-width: 500px) {
-	p {
-		padding: 0 2.5rem;
-	}
-
-	.projects {
-		grid-template-columns: 1fr;
-	}
-
-	main {
-		align-items: center;
-		text-align: center;
-	}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
