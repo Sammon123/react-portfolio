@@ -1,0 +1,8 @@
+footer {
+	text-align: center;
+	padding: 1rem;
+	background: url('../../img/bg.jpg') round;
+	color: #fff;
+	height: 60px;
+	width: 100%;
+}
