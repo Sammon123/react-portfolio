@@ -1,0 +1,74 @@
+a {
+	color: #fff;
+	text-decoration: none;
+}
+
+header {
+	color: #fff;
+	background: transparent;
+	position: fixed;
+	z-index: 2;
+	width: 100%;
+}
+
+li {
+	margin-right: 1.75rem;
+}
+
+span {
+	text-decoration: none;
+}
+
+ul {
+	list-style: none;
+}
+
+.navbar-light .navbar-brand {
+	color: white;
+}
+
+.navbar-light .navbar-nav .active > .nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show > .nav-link {
+	color: #fff;
+}
+
+.navbar-light .navbar-nav .nav-link {
+	color: #fff;
+}
+
+.navbar-light .navbar-toggler {
+	background-color: white;
+}
+
+.navbar-light:hover .navbar-brand:hover {
+	color: #111;
+	transition: 0.5s;
+}
+
+.navbar-light:hover .navbar-nav:hover .nav-link:hover {
+	color: rgba(0, 26, 0);
+	transition: 0.25s;
+}
+
+.navbar-light:hover .navbar-toggler:hover {
+	background-color: transparent;
+	transition: 0.5s;
+}
+
+.navbar-light:active .navbar-brand:active {
+	color: #fff;
+	transition: 0.25s;
+}
+
+.navbar-light:active .navbar-nav:active .nav-link:active {
+	color: white;
+	transition: 0.25s;
+}
+
+.navbar-light:active .navbar-toggler:active {
+	background-color: white;
+	transition: 0.5s;
+	border: none;
+}
