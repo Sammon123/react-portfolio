@@ -1,0 +1,65 @@
+main {
+	padding: 4rem;
+	min-height: calc(100vh-60px);
+}
+
+h1,
+h2 {
+	margin: 0;
+	font-weight: 400;
+}
+
+p {
+	margin: 1rem 0;
+	width: 75%;
+}
+
+h1.lg-heading {
+	font-size: 6rem;
+}
+
+.portrait {
+	height: 35vh;
+	border-radius: 50%;
+	border: 3px rgba(5, 44, 5) solid;
+	float: right;
+}
+
+@media screen and (min-width: 769px) and (max-width: 1170px) {
+	h1.lg-heading {
+		font-size: 5rem;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	p {
+		width: 100%;
+		padding: 0 1.5rem;
+	}
+	main {
+		align-items: center;
+		text-align: center;
+	}
+
+	main .lg-heading {
+		line-height: 1;
+		margin-bottom: 1rem;
+		font-size: 3rem;
+	}
+
+	.portrait {
+		float: none;
+		height: 25vh;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	p {
+		padding: 0 2.5rem;
+	}
+
+	main {
+		align-items: center;
+		text-align: center;
+	}
+}
