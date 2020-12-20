@@ -123,14 +123,6 @@ const Portfolio = () => {
 						<i className='fas fa-arrow-right'></i> Github Pages
 					</a>
 				</div>
-				<div className='item'>
-					<a href='#!'>
-						<object data={Resume}>Resume</object>
-					</a>
-					<a href='../../img/Resume.pdf' className='btn-dark'>
-						Resume
-					</a>
-				</div>
 			</div>
 		</main>
 	);
