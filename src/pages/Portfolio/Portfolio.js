@@ -1,9 +1,9 @@
 import React from 'react';
 import './Portfolio.css';
 import Booktivist from '../../img/Booktivist.png';
-import PasswordGenerator from '../../img/passcodeGenerator.png';
 import Hench from '../../img/hench-printworks.png';
-import Resume from '../../img/Resume.pdf';
+import Spotify from '../../img/spotify.png';
+import Zomato from '../../img/zomato.png';
 
 const Portfolio = () => {
 	return (
@@ -16,10 +16,7 @@ const Portfolio = () => {
 			<div className='projects'>
 				<div className='item'>
 					<a href='#!'>
-						<img
-							src='https://github.com/Sammon123/Zomato/blob/master/dist/appExample.png?raw=true'
-							alt='projects'
-						/>
+						<img src={Zomato} alt='projects' />
 					</a>
 					<a
 						href='https://github.com/Sammon123/Zomato'
@@ -55,6 +52,7 @@ const Portfolio = () => {
 						<i className='fas fa-arrow-right'></i> Heroku
 					</a>
 				</div>
+
 				<div className='item'>
 					<a href='#!'>
 						<img src={Hench} alt='projects' />
@@ -63,6 +61,19 @@ const Portfolio = () => {
 						<i className='fab fa-github'></i> Project 3 - Hench Printworks
 					</a>
 					<a href='https://hench-printworks.web.app/' className='btn-dark'>
+						<i className='fas fa-arrow-right'></i> Firebase
+					</a>
+				</div>
+				<div className='item'>
+					<a href='#!'>
+						<img src={Spotify} alt='projects' />
+					</a>
+					<a
+						href='https://github.com/Sammon123/Spotify-React'
+						className='btn-dark'>
+						<i className='fab fa-github'></i> Spotify Clone
+					</a>
+					<a href='https://spotify-react-cf8fa.web.app/' className='btn-dark'>
 						<i className='fas fa-arrow-right'></i> Firebase
 					</a>
 				</div>
@@ -104,21 +115,6 @@ const Portfolio = () => {
 						href='https://sammon123.github.io/code-quiz/'
 						rel='noreferrer'
 						target='_blank'
-						className='btn-dark'>
-						<i className='fas fa-arrow-right'></i> Github Pages
-					</a>
-				</div>
-				<div className='item'>
-					<a href='#!'>
-						<img src={PasswordGenerator} alt='projects' />
-					</a>
-					<a
-						href='https://github.com/Sammon123/passcode-generator'
-						className='btn-dark'>
-						<i className='fab fa-github'></i> Password Generator
-					</a>
-					<a
-						href='https://sammon123.github.io/passcode-generator/'
 						className='btn-dark'>
 						<i className='fas fa-arrow-right'></i> Github Pages
 					</a>
